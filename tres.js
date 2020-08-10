@@ -32,8 +32,8 @@ function mostrar()
 		sexo = prompt("Ingrese su sexo: ", "femenino/masculino");
 		}while(!(sexo=="femenino" || sexo=="masculino") );
 		do {
-			lugar = prompt("Ingrese el lugar: ", "bariloche/cataratas/salta")
-		} while (!(lugar == "bariloche" || lugar == "cataratas" || lugar == "salta"));
+			lugar = prompt("Ingrese el lugar: ", "Bariloche/Cataratas/Salta")
+		} while (!(lugar == "Bariloche" || lugar == "Cataratas" || lugar == "Salta"));
 		do {
 			temporada = (prompt("Ingrese la temporada en la que desea viajar: ", "otoño/invierno/verano/primavera"));
 		} while (!(temporada == "otoño" || temporada == "invierno" || temporada == "verano" || temporada == "primavera"));
@@ -42,13 +42,13 @@ function mostrar()
 		} while (isNaN(pasajeros));
 
 		switch (lugar) {
-			case "bariloche":
+			case "Bariloche":
 				contbariloche++;
 				break;
-			case "cataratas":
+			case "Cataratas":
 				contcataratas++;
 				break;
-			case "salta":
+			case "Salta":
 				contsalta++;
 				break;
 		}
@@ -62,7 +62,7 @@ function mostrar()
 			personasinvierno = personasinvierno + pasajeros;
 		}
 
-		respuesta = prompt("Desea ingresar otra estadía: ");
+		respuesta = prompt("Desea ingresar otra estadía: ", "si/no");
 	} while (respuesta == "si" || respuesta == "s");
 	
 	promedioinvierno = personasinvierno / continvierno;

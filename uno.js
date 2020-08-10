@@ -31,7 +31,7 @@ function mostrar() {
 		} while (isNaN(peso));
 
 		do {
-			sexo = prompt("Ingrese su sexo: ");
+			sexo = prompt("Ingrese su sexo: ", "masculino/femenino");
 		} while (!(sexo == "femenino" || sexo == "masculino" || sexo == "f" || sexo == "m"));
 
 		do {
@@ -54,7 +54,6 @@ function mostrar() {
 			flag = 1
 		}
 	}
-
 	promedioedad = Math.round(cantedad / contadoredad);
 
 	document.write("La cantidad de mujeres es: " + cantfem + "<br>");
