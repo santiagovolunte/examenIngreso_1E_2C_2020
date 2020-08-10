@@ -51,7 +51,7 @@ function mostrar() {
 		if ((sexo == "masculino" || sexo == "m") && (flag == 0 || peso > maxpeso)) {
 			maxpeso = peso
 			hombremaspesado = nombre
-			flag = 1
+			flag = 1;
 		}
 	}
 	promedioedad = Math.round(cantedad / contadoredad);

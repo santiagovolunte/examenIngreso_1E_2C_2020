@@ -34,12 +34,12 @@ function mostrar() {
     if ((tipo == "liquido") && (flag1 == 0 || precio > liquidocaro)) {
       liquidocaro = precio
       marcacara = marca;
-      flag1 = 1
+      flag1 = 1;
     }
     else if ((tipo == "solido") && flag2 == 0 || precio < solidobarato) {
       pesomin = peso;
       solidobarato = marca;
-      flag2 = 1
+      flag2 = 1;
     }
     respuesta = prompt("Desea ingresar otro producto: ", "si/no");
   } while (respuesta == "Si" || respuesta == "s" ||respuesta=="si" );
